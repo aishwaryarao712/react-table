@@ -3,12 +3,7 @@ import { defaultColumn } from './publicUtils'
 
 // Find the depth of the columns
 export function findMaxDepth(columns, depth = 0) {
-  return columns.reduce((prev, curr) => {
-    if (curr.columns) {
-      return Math.max(prev, findMaxDepth(curr.columns, depth + 1))
-    }
-    return depth
-  }, 0)
+  return 0
 }
 
 // Build the visible columns, headers and flat column list
